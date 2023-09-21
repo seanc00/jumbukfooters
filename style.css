@@ -15,6 +15,8 @@ h1 {
 img {
   width: 80px;
 }
+/* end of global Styles */
+
 
 /* Banner styles */
 .bannerContainer {
@@ -37,3 +39,21 @@ img {
     transform: translate3d(-1692px, 0, 0);
   }
 }
+/* End of banner styles */
+
+
+/* Footer Styles */
+.footerContainer {
+  display: flex;
+  flex-direction: row;
+  background-color: black;
+  color: #709AB4;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  padding-bottom: 30px;
+}
+
+/* End of footer Styles */
+
+
