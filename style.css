@@ -17,31 +17,23 @@ img {
 }
 
 /* Banner styles */
-.banner {
-  width: 100%;
-}
 
-.slider  {
-  --d: 16s; /* duration */
-
-  background-color: #000;
-  
-  display: grid;
+.container {
   overflow: hidden;
-  -webkit-mask: linear-gradient(90deg,#0000,#000 0% 1000%,#0000);
 }
-.slider > img {
-  grid-area: 1/1;
+
+.sliding-background {
+  background: url("images/bannerImage.png") repeat-x;
   height: 50px;
-  aspect-ratio: 1.5;
-  object-fit: cover;
-  animation: r var(--d) linear infinite;
+  width: 5076px;
+  animation: slide 16s linear infinite;
 }
 
-.slider > img:nth-child(3) {animation-delay: calc(1*var(--d)/-4)}
-.slider > img:nth-child(4) {animation-delay: calc(2*var(--d)/-4)}
-
-@keyframes r {
-  75%    {transform: translate(-300%)}
-  75.01% {transform: translate( 100%)}
+@keyframes slide{
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-1692px, 0, 0);
+  }
 }
