@@ -17,9 +17,8 @@ img {
 }
 
 /* Banner styles */
-
-.container {
-  overflow: hidden;
+.container1 {
+  overflow: hidden; /* Hide overflow content */
 }
 
 .sliding-background {
@@ -27,9 +26,10 @@ img {
   height: 50px;
   width: 5076px;
   animation: slide 16s linear infinite;
+  white-space: nowrap; /* Prevent line breaks */
 }
 
-@keyframes slide{
+@keyframes slide {
   0% {
     transform: translate3d(0, 0, 0);
   }
