@@ -21,6 +21,8 @@ img {
 /* Banner styles */
 .bannerContainer {
   overflow: hidden; /* Hide overflow content */
+  max-width: 800px;
+  min-width: 480px;
 }
 
 .sliding-background {
@@ -52,7 +54,9 @@ img {
   align-items: center;
   gap: 40px;
   padding-bottom: 30px;
-}
+
+  max-width: 800px;
+  min-width: 480px;}
 
 /* End of footer Styles */
 
