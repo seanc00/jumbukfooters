@@ -29,7 +29,7 @@ img {
   background: url("images/bannerImage.png") repeat-x;
   height: 50px;
   width: 5076px;
-  animation: slide 16s linear infinite;
+  animation: slide 24s linear infinite;
   white-space: nowrap; /* Prevent line breaks */
 }
 
@@ -53,7 +53,7 @@ img {
   justify-content: center;
   align-items: center;
   gap: 40px;
-  padding: 31px;
+  padding: 30px;
 
   max-width: 800px;
   min-width: 480px;
