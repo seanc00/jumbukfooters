@@ -53,10 +53,18 @@ img {
   justify-content: center;
   align-items: center;
   gap: 40px;
-  padding-bottom: 30px;
+  padding: 31px;
 
   max-width: 800px;
-  min-width: 480px;}
+  min-width: 480px;
+}
+
+.bigContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
 /* End of footer Styles */
 
