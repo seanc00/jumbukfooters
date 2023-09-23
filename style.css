@@ -56,8 +56,9 @@ img {
   color: #709AB4;
   justify-content: center;
   align-items: center;
-  gap: 40px;
+  gap: 23px;
   padding: 30px;
+  flex-wrap: wrap;
 
   max-width: 800px;
   min-width: 480px;
