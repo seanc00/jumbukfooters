@@ -47,7 +47,116 @@ p {
 
 /* For Desktop View */
 @media screen and (min-width: 1024px) {
-    /* Footer Styles */
+ /* Footer Styles */
+ .footerContainer, .footerContainerBottom {
+  display: flex;
+  flex-direction: row;
+  background-color: black;
+  color: #709AB4;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 0px 10px 0px;
+  width: 100%;
+  max-width: 1100px;
+}
+.footerContainerBottom {
+  flex-direction: column;
+  color: #709AB4;
+}
+.footerContainer {
+  flex-wrap: wrap;
+}
+.member {
+  background-color: white;
+  width: 180px;
+  border: #709AB4 solid 5px;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+.socialMediaIcons {
+  display: flex;
+  gap: 15px;
+
+}
+
+.footerRight {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  margin-top: 25px;
+}
+
+.divider {
+  border-top: 1px solid #709AB4;
+  margin: 10px 0px;
+  color: #709AB4;
+  width: 85;
+}
+#divider {
+  width: 85%;
+}
+
+.copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+
+}
+
+.containerRight {
+  display: flex;
+  flex-direction: column;
+}
+.containerLeft > img {
+  width: 100px;
+}
+
+.bigContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+i {
+  width: 30px;
+}
+
+
+  /* Banner styles */
+  .bannerContainer {
+    overflow: hidden; /* Hide overflow content */
+    max-width: 1100px;
+    width: 100%;
+  }
+
+  .sliding-background {
+    background: url("images/bannerImage.png") repeat-x;
+    height: 50px;
+    width: 5076px;
+    animation: slide 24s linear infinite;
+    white-space: nowrap; /* Prevent line breaks */
+  }
+
+  @keyframes slide {
+    0% {
+      transform: translate3d(0, 0, 0);
+    }
+    100% {
+      transform: translate3d(-1692px, 0, 0);
+    }
+  }
+  /* End of banner styles */
+
+}
+
+/* For Tablet View */
+@media screen and (min-device-width: 768px)
+  and (max-device-width: 1024px) {
+        /* Footer Styles */
   .footerContainer, .footerContainerBottom {
     display: flex;
     flex-direction: row;
@@ -56,8 +165,6 @@ p {
     justify-content: space-around;
     align-items: center;
     padding: 10px 0px 10px 0px;
-
-    max-width: 900px;
     width: 100%;
   }
   .footerContainerBottom {
@@ -93,7 +200,7 @@ p {
     color: #709AB4;
   }
   #divider {
-    width: 800px;
+    width: 85%;
   }
 
   .copyright {
@@ -103,7 +210,6 @@ p {
     gap: 40px;
 
   }
-
 
   .containerRight {
     display: flex;
@@ -122,58 +228,135 @@ p {
   i {
     width: 30px;
   }
-/* End of footer Styles */
-/* Banner styles */
-.bannerContainer {
-  overflow: hidden; /* Hide overflow content */
-  max-width: 900px;
-  width: auto;
+
+
+    /* Banner styles */
+    .bannerContainer {
+      overflow: hidden; /* Hide overflow content */
+      width: 100%;
+    }
+
+    .sliding-background {
+      background: url("images/bannerImage.png") repeat-x;
+      height: 50px;
+      width: 5076px;
+      animation: slide 24s linear infinite;
+      white-space: nowrap; /* Prevent line breaks */
+    }
+
+    @keyframes slide {
+      0% {
+        transform: translate3d(0, 0, 0);
+      }
+      100% {
+        transform: translate3d(-1692px, 0, 0);
+      }
+    }
+    /* End of banner styles */
 }
 
-.sliding-background {
-  background: url("images/bannerImage.png") repeat-x;
-  height: 50px;
-  width: 5076px;
-  animation: slide 24s linear infinite;
-  white-space: nowrap; /* Prevent line breaks */
-}
+/* For Mobile Portrait View */
+@media screen and (max-device-width: 768px) {
+          /* Footer Styles */
+          .footerContainer, .footerContainerBottom {
+            display: flex;
+            flex-direction: column;
+            background-color: black;
+            color: #709AB4;
+            justify-content: space-around;
+            align-items: center;
+            padding: 10px 0px 10px 0px;
+            width: 100%;
+          }
+          .footerContainerBottom {
+            flex-direction: column;
+            color: #709AB4;
+          }
+          .member {
+            background-color: white;
+            width: 180px;
+            border: #709AB4 solid 5px;
+            border-radius: 8px;
+            margin-top: 20px;
+          }
+        
+          .socialMediaIcons {
+            display: flex;
+            gap: 15px;
+        
+          }
+        
+          .footerRight {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+            margin-top: 25px;
+          }
+        
+          .divider {
+            border-top: 1px solid #709AB4;
+            margin: 10px 0px;
+            color: #709AB4;
+          }
+          #divider {
+            width: 85%;
+          }
 
-@keyframes slide {
-  0% {
-    transform: translate3d(0, 0, 0);
-  }
-  100% {
-    transform: translate3d(-1692px, 0, 0);
-  }
-}
-/* End of banner styles */
+          p {
+            text-align: center;
+          }
+        
+          .copyright {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 40px;
+        
+          }
+        
+          .containerRight {
+            display: flex;
+            flex-direction: column;
+          }
+          .containerLeft > img {
+            width: 100px;
+          }
+          .containerLeft {
+            margin-bottom: 30px;
+          }
+        
+          .bigContainer {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+          }
+          i {
+            width: 30px;
+          }
+    /* Banner styles */
+    .bannerContainer {
+      overflow: hidden; /* Hide overflow content */
+      width: 100%;
+    }
 
-}
+    .sliding-background {
+      background: url("images/bannerImage.png") repeat-x;
+      height: 50px;
+      width: 5076px;
+      animation: slide 24s linear infinite;
+      white-space: nowrap; /* Prevent line breaks */
+    }
 
-For Tablet View
-@media screen and (min-device-width: 768px)
-  and (max-device-width: 1024px) {
-
-}
-
-/* For Mobile Portrait View
-@media screen and (max-device-width: 480px)
-  and (orientation: portrait) {
-  .gfg-div {
-      width: 200px;
-      height: 200px;
-      background-color: red;
-      color: #fff;
-  }
-}
-
-/* For Mobile Landscape View
-@media screen and (max-device-width: 640px)
-  and (orientation: landscape) {
-  .gfg-div {
-      width: 400px;
-      height: 200px;
-      background-color: cyan;
-      color: black;
-  }
+    @keyframes slide {
+      0% {
+        transform: translate3d(0, 0, 0);
+      }
+      100% {
+        transform: translate3d(-1692px, 0, 0);
+      }
+    }
+    /* End of banner styles */
 }
